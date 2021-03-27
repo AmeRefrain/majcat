@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>MajCat 麻遨</h1>
+    <form action="/majcat/px_text/" method="post">
+        {% csrf_token %}
+        请输入牌形（14张）：<br>
+        <input type="text" name="px_data" placeholder="例：1112345678999m1z">
+        <input type="submit" value="确定">
+    </form>
+    <form action="/majcat/px_image/" method="post">
+        {% csrf_token %}
+        请输入雀魂出牌截图：<br>
+        <input type="image" name="px_data" >
+    </form>
+</body>
+</html>
